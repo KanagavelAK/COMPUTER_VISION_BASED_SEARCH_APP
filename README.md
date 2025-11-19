@@ -15,13 +15,13 @@ Visualization of Detection & Metadata
 
 Local filesystem-based search
 
-### Features
- 1. Upload Image
+## Features
+### 1. Upload Image
 
 Users can upload any image (JPEG/PNG).
 The app automatically performs YOLOv11 inference.
 
- 2. Object Detection (YOLOv11)
+### 2. Object Detection (YOLOv11)
 
 Model: YOLOv11 (or YOLOv8/YOLOv5 depending on your model file)
 
@@ -57,7 +57,8 @@ Results gallery
 
 Confidence threshold slider
 
-### Project Structure
+## Project Structure
+```
 Yolov11_Image_search/
 │
 ├── app.py                         # Streamlit application
@@ -77,8 +78,8 @@ Yolov11_Image_search/
 │   └── metadata.json              # Stored metadata from detections
 │
 └── requirements.txt
-
-### Installation
+```
+## Installation
 1. Create a Python Environment
 conda create -n cvsearch python=3.10
 conda activate cvsearch
@@ -97,7 +98,7 @@ pyyaml
 ultralytics
 scikit-learn
 
-### Running the Application
+## Running the Application
 
 From the project root, run:
 
@@ -113,7 +114,7 @@ The UI opens at:
 
 http://localhost:8501
 
-### How It Works
+## How It Works
 
 User uploads an image.
 
@@ -127,7 +128,7 @@ Search engine compares detected classes with dataset metadata.
 
 Matching images are returned with confidence scores.
 
-### Output:
+## Output:
 <img width="1919" height="937" alt="image" src="https://github.com/user-attachments/assets/63483ef4-6039-4ec0-a4d9-9d01800ec8cf" />
 
 <img width="1919" height="526" alt="image" src="https://github.com/user-attachments/assets/52ce54c7-dd93-463d-bfe1-b48d0f3f85c9" />
@@ -137,3 +138,6 @@ Matching images are returned with confidence scores.
 <img width="1919" height="921" alt="image" src="https://github.com/user-attachments/assets/1246d930-8d9f-4672-bc0a-00c5a7ab0b7d" />
 
 <img width="1919" height="926" alt="image" src="https://github.com/user-attachments/assets/c900d6d0-b098-4cf1-a996-901d349bbf4d" />
+
+## Result:
+Thus, the Image Search Application using YOLOv11 & Streamlit is successfully achieved.
